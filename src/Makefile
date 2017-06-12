@@ -9,7 +9,7 @@ SRCS := $(wildcard *.cpp)
 OBJS := $(patsubst %.cpp,%.o,$(SRCS))  
 all:$(PRGM)  
 $(PRGM):$(OBJS)
-	$(LINKCC) -o ../bin/$(PRGM) $(LDFLAGS) $(LIBS) $(OBJS)
+	$(LINKCC) -o ../$(PRGM) $(LDFLAGS) $(LIBS) $(OBJS)
 %.o:%.cpp
 	$(COMPILE) $< -o $@ 
 .PHONY:clean  
