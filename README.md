@@ -1,2 +1,2 @@
-# simulator_104
+# simulator
 a simulator of IEC60870-5-104
